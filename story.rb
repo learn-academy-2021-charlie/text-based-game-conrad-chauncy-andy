@@ -23,7 +23,8 @@ end
 
 #return a string from intro(name) with left, right, or center
 intro_path = intro(name)
-
+#The River
+########################################################
 def option_left_story
     "You have reached the river.. it is a rocky river with a fast current.. you want to cross the river and you have three options to do so option 1) a rickety bridge option 2) an old boat option 3) swim across please type your option number bellow ".each_char do |value|
         putc value 
@@ -50,6 +51,13 @@ def option_boat
     end
 end
 
+def option_swim
+    "You survived and made it to the other side. Now that you here you are faced with new challenges.".each_char do |value|
+        putc value 
+        sleep 0.05
+    end
+end
+################################################################
 def option_center 
     "You have reached the cave.. it is a dark and smelly cave .. you have a ravine in front of you you have to cross you have three options 1) A hanging vine you can swing across option 2) full send jump option 3) climb down into the ravine and try to walk across ".each_char do |value|
         putc value 
@@ -91,7 +99,7 @@ end
 
 start_path(intro_path)
 
-option_left = left_options(option_left_story)
+left_options(option_left_number)
 
 
 
